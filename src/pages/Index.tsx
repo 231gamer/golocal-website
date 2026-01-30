@@ -4,7 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { TrustBadge } from "@/components/TrustBadge";
 import { SectionHeading } from "@/components/SectionHeading";
-import heroProduct from "@/assets/hero-product.jpg";
+import heroProduct from "@/assets/ks-gari-single.jpg";
 
 const trustIndicators = [
   { icon: ShieldCheck, title: "Hygienically Processed" },

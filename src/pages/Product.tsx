@@ -3,7 +3,7 @@ import { Check, ShieldCheck, QrCode } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/SectionHeading";
-import heroProduct from "@/assets/hero-product.jpg";
+import heroProduct from "@/assets/ks-gari-sizes.jpg";
 
 const ingredients = [
   { name: "Gari (Cassava)", description: "Locally grown and processed cassava" },
