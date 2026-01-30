@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# KS Gari Cereal Website
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This repository contains the source code for the **KS Gari Cereal** official website — a product-focused, trust-driven marketing site built to promote a locally produced, ready-to-eat cereal in Liberia.
 
-## How can I edit this code?
+The website is designed to:
 
-There are several ways of editing your application.
+* Clearly communicate what KS Gari Cereal is
+* Build trust around hygiene, safety, and legitimacy
+* Make it easy for customers, distributors, and partners to contact GoLocal
+* Highlight local sourcing and community impact
 
-**Use Lovable**
+This is **not an e-commerce platform**. The primary conversion goals are phone calls, WhatsApp messages, and contact form submissions.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Product Information
 
-**Use your preferred IDE**
+**Product Name:** KS Gari Cereal
+**Producer:** GoLocal
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Description:**
+KS Gari Cereal is a nutritious, ready-to-eat cereal made from locally sourced cassava (gari), roasted peanuts, grated coconut, sugar, and non-dairy milk. It is hygienically processed, batch-coded for traceability, and designed to provide a convenient, wholesome meal for children, students, and families. The product supports local farmers and vulnerable communities in Liberia.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Website Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The website consists of **five core pages**:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Home** – Product overview, trust indicators, and primary calls to action
+2. **Product** – Detailed product information, ingredients, and hygiene standards
+3. **Why KS Gari Cereal** – Key differentiators and value proposition
+4. **About GoLocal** – Company background and mission
+5. **Contact / Order** – Contact details, WhatsApp access, and inquiry form
 
-# Step 3: Install the necessary dependencies.
-npm i
+No blog, testimonials, or checkout system is included by design.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Target Audience
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* Parents and families
+* Students
+* Small retailers and distributors
+* NGOs and institutional buyers
+* Primarily mobile users in Liberia (low-bandwidth environments)
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Design Principles
 
-## What technologies are used for this project?
+* Mobile-first and responsive
+* Clean, minimal, and fast-loading
+* Earth-tone color palette inspired by cassava, peanuts, and coconut
+* High contrast and large typography for readability
+* Clear calls to action on every page
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Key Features
 
-## How can I deploy this project?
+* Click-to-call phone numbers
+* WhatsApp chat integration
+* Simple contact form (name, phone, message only)
+* SEO-friendly page structure
+* Placeholder support for product images
+* Low-bandwidth optimized performance
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## Contact Information (Displayed Site-Wide)
 
-Yes, you can!
+* **Phone:** 0777842609 / 0880557574
+* **Email:** [golicalliberia@gmail.com](mailto:golicalliberia@gmail.com)
+* **Website:** [www.golocal.biz](http://www.golocal.biz)
+* **Address:** 1st Floor, Khouri Building, Monrovia, Montserrado County, Liberia
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Tech Stack
+
+> *(Adjust this section if needed)*
+
+* Frontend: Vite, Typescript 
+* Hosting: Netlify
+* Styling: CSS / Tailwind / component-based styling
+* Deployment: CI/CD via hosting provider
+
+---
+
+## Development Notes
+
+* Do not add unverified certifications or claims
+* Avoid heavy animations or large third-party scripts
+* Keep content factual, short, and scannable
+* Optimize for performance on mobile networks
+
+---
+
+## License
+
+This project and its content are proprietary to **GoLocal**.
+Unauthorized reuse, modification, or redistribution is not permitted without written consent.
