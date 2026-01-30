@@ -21,7 +21,7 @@ export function Header() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <span className="font-display text-xl font-bold text-primary md:text-2xl">
-            KS Gari Cereal
+            GoLocal
           </span>
         </Link>
 
