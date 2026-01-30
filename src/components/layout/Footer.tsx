@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="font-display text-xl font-bold text-primary">
-              KS Gari Cereal
+              GoLocal
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Nutritious, ready-to-eat cereal made from locally sourced ingredients in Liberia.
