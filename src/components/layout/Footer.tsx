@@ -57,11 +57,11 @@ export function Footer() {
                 className="flex items-start gap-3 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>golicalliberia@gmail.com</span>
+                <span>golocalliberia@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>1st Floor, Khouri Building, Monrovia, Montserrado County, Liberia</span>
+                <span>1st Floor, Khouri Building, Johnson Street, Monrovia, Liberia</span>
               </div>
             </div>
           </div>

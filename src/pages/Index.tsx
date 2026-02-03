@@ -32,7 +32,7 @@ const Index = () => {
                 Nutritious, Ready-to-Eat Gari Cereal — Made in Liberia.
               </h1>
               <p className="mt-4 text-lg text-muted-foreground md:text-xl">
-                Made from locally sourced cassava, peanuts, coconut, and non-dairy milk. 
+                Made from locally sourced cassava, peanuts, coconut, and non-dairy powdered milk. 
                 Hygienically processed and ready anytime.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -150,7 +150,7 @@ const Index = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email Us</p>
-                  <p className="font-semibold text-foreground text-sm">golicalliberia@gmail.com</p>
+                  <p className="font-semibold text-foreground text-sm">golocalliberia@gmail.com</p>
                 </div>
               </a>
             </div>
@@ -162,7 +162,7 @@ const Index = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Visit Us</p>
                   <p className="font-semibold text-foreground">
-                    1st Floor, Khouri Building, Monrovia, Montserrado County, Liberia
+                    1st Floor, Khouri Building, Johnson Street, Monrovia, Liberia
                   </p>
                 </div>
               </div>

@@ -10,7 +10,7 @@ const ingredients = [
   { name: "Roasted Peanuts", description: "Protein-rich groundnuts from Liberian farms" },
   { name: "Grated Coconut", description: "Fresh coconut for natural flavor" },
   { name: "Sugar", description: "Balanced sweetness" },
-  { name: "Non-Dairy Milk", description: "Creamy texture without dairy" },
+  { name: "Non-Dairy Powdered Milk", description: "Creamy texture without dairy" },
 ];
 
 const targetAudience = [
@@ -33,7 +33,7 @@ const Product = () => {
               </h1>
               <p className="mt-4 text-lg text-muted-foreground md:text-xl">
                 A nutritious, ready-to-eat cereal made from locally sourced cassava (gari), 
-                roasted peanuts, grated coconut, sugar, and non-dairy milk.
+                roasted peanuts, grated coconut, sugar, and non-dairy powdered milk.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Hygienically processed and batch-coded for traceability. Designed to provide 
