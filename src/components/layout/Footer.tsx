@@ -12,11 +12,11 @@ export function Footer() {
               GoLocal
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Nutritious, ready-to-eat cereal made from locally sourced ingredients in Liberia.
+              Liberia-based agro-food systems enterprise connecting farmers to institutional buyers with standardized, high-quality staple foods.
             </p>
-            <p className="text-sm text-muted-foreground">
+            {/* <p className="text-sm text-muted-foreground">
               Produced by <strong className="text-foreground">GoLocal</strong>
-            </p>
+            </p> */}
           </div>
 
           {/* Quick Links */}

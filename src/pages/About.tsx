@@ -7,23 +7,23 @@ import { SectionHeading } from "@/components/SectionHeading";
 const values = [
   {
     icon: Sprout,
-    title: "Local Sourcing",
-    description: "We source all our ingredients from Liberian farmers, ensuring freshness and supporting local agriculture.",
+    title: "Local Value Chains",
+    description: "We strengthen Liberia's food systems by connecting farmers directly to institutional markets.",
   },
   {
     icon: Users,
-    title: "Community Empowerment",
-    description: "We create jobs and opportunities for vulnerable communities across Liberia.",
+    title: "Farmer Empowerment",
+    description: "Supporting smallholder farmers and community processors with fair pricing and reliable demand.",
   },
   {
     icon: Target,
     title: "Quality Standards",
-    description: "Every product meets strict hygiene and quality standards for your family's safety.",
+    description: "Delivering standardized, hygienic products that meet institutional requirements.",
   },
   {
     icon: Globe,
-    title: "Sustainable Impact",
-    description: "We're building a sustainable food system that benefits both people and the environment.",
+    title: "Institutional Supply",
+    description: "Reliable food supply solutions for schools, NGOs, and development programs.",
   },
 ];
 
@@ -53,30 +53,21 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                GoLocal is a Liberian company dedicated to producing nutritious, 
-                locally-made food products that support our communities. We believe 
-                that quality nutrition should be accessible to everyone, and that 
-                food production should benefit local farmers and workers.
+                GoLocal Group of Companies is a Liberia-based agro-food systems and institutional supply enterprise engaged in the aggregation, processing, packaging, and distribution of locally produced staple foods. The company operates an integrated food systems model that connects smallholder farmers and community-based processors to institutional buyers such as schools, non-governmental organizations, training institutions, and development programs. GoLocal focuses on delivering standardized, high-quality food products while strengthening local value chains and institutional supply systems.
               </p>
               
               <h2 className="mt-12 font-display text-2xl font-bold text-foreground md:text-3xl">
-                Why We Created KS Gari Cereal
+                Our Mission
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                We saw a need for convenient, nutritious food options that families 
-                could afford. Many imported cereals are expensive and don't use local 
-                ingredients. KS Gari Cereal was created to fill this gap — providing 
-                a ready-to-eat, wholesome meal made entirely from Liberian ingredients.
+                We bridge the gap between local food production and institutional demand, ensuring that Liberian farmers and processors have reliable markets while institutions receive consistent, quality-assured staple foods. Through KS Gari Cereal and other products, we demonstrate how local food systems can meet modern standards of quality, hygiene, and nutrition.
               </p>
               
               <h2 className="mt-12 font-display text-2xl font-bold text-foreground md:text-3xl">
-                Our Commitment
+                Institutional Impact
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                We are committed to local sourcing and production. Every ingredient 
-                in KS Gari Cereal — the cassava, peanuts, and coconut — comes from 
-                Liberian farms. This creates fair income for farmers and keeps money 
-                circulating in our local economy.
+                Our work supports Liberia's development goals by strengthening local value chains, creating sustainable livelihoods for smallholder farmers, and providing reliable food supply solutions for schools, NGOs, and development programs. Every product we deliver represents a step toward greater food security and economic resilience in our communities.
               </p>
             </div>
           </div>
@@ -117,11 +108,7 @@ const About = () => {
               Our Vision
             </h2>
             <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">
-              We envision a Liberia where nutritious, locally-produced food is 
-              available to everyone. Where farmers earn fair wages for their work. 
-              Where communities thrive because food production happens right here, 
-              not overseas. KS Gari Cereal is just the beginning of this journey 
-              toward food security and community development.
+              We envision a Liberia where integrated food systems provide sustainable livelihoods for farmers while ensuring reliable, quality food supplies for institutions. Through our agro-food enterprise model, we aim to contribute to food security, economic development, and community resilience across the country.
             </p>
           </div>
         </div>

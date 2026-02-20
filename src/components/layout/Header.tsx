@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-1.jpeg";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/product", label: "Product" },
   { href: "/why-ks-gari", label: "Why KS Gari" },
   { href: "/about", label: "About" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -20,9 +22,11 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-xl font-bold text-primary md:text-2xl">
-            GoLocal
-          </span>
+          <img
+            src={logo}
+            alt="GoLocal Logo"
+            className="h-8 w-auto md:h-10"
+          />
         </Link>
 
         {/* Desktop Navigation */}

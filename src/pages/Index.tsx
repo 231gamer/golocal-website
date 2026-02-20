@@ -4,7 +4,13 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { TrustBadge } from "@/components/TrustBadge";
 import { SectionHeading } from "@/components/SectionHeading";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import heroProduct from "@/assets/ks-gari-single.jpg";
+import heroSizes from "@/assets/ks-gari-sizes.jpg";
+import slider1 from "@/assets/slider-1.png";
+import slider2 from "@/assets/slider-2.png";
+import slider3 from "@/assets/slider-3.jpeg";
 
 const trustIndicators = [
   { icon: ShieldCheck, title: "Hygienically Processed" },
@@ -20,38 +26,81 @@ const productBenefits = [
   "Convenient and affordable nutrition",
 ];
 
+const heroSlides = [
+  {
+    image: slider1,
+    alt: "KS Gari Cereal individual pack",
+    headline: "Individual Family Pack",
+    subtitle: "Perfect for daily nutrition",
+  },
+  {
+    image: slider2,
+    alt: "KS Gari Cereal multiple sizes",
+    headline: "Available in Multiple Sizes",
+    subtitle: "From small portions to family servings",
+  },
+  {
+    image: slider3,
+    alt: "KS Gari Cereal ready to eat",
+    headline: "Ready-to-Eat Cereal",
+    subtitle: "No cooking required, instant nutrition",
+  },
+  {
+    image: slider1,
+    alt: "KS Gari Cereal locally sourced",
+    headline: "Locally Sourced Ingredients",
+    subtitle: "Made with Liberian cassava, peanuts & coconut",
+  },
+];
+
 const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-secondary/50 to-background py-12 md:py-20 lg:py-24">
         <div className="container">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="order-2 lg:order-1 animate-fade-in">
-              <h1 className="font-display text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl">
-                Nutritious, Ready-to-Eat Gari Cereal — Made in Liberia.
-              </h1>
-              <p className="mt-4 text-lg text-muted-foreground md:text-xl">
-                Made from locally sourced cassava, peanuts, coconut, and non-dairy powdered milk. 
-                Hygienically processed and ready anytime.
-              </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <Button asChild variant="hero" size="lg">
-                  <Link to="/contact">Order Now / Contact Us</Link>
-                </Button>
-                <Button asChild variant="heroOutline" size="lg">
-                  <Link to="/contact">Become a Distributor</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <img
-                src={heroProduct}
-                alt="KS Gari Cereal product package with bowl of cereal"
-                className="mx-auto w-full max-w-md rounded-2xl shadow-xl lg:max-w-lg"
-              />
-            </div>
-          </div>
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {heroSlides.map((slide, index) => (
+                <CarouselItem key={index}>
+                  <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+                    <div className="order-2 lg:order-1 animate-fade-in">
+                      <h1 className="font-display text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl">
+                        {slide.headline}
+                      </h1>
+                      <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+                        {slide.subtitle}
+                      </p>
+                      <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <Button asChild variant="hero" size="lg">
+                          <Link to="/contact">Order Now / Contact Us</Link>
+                        </Button>
+                        <Button asChild variant="heroOutline" size="lg">
+                          <Link to="/contact">Become a Distributor</Link>
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="order-1 lg:order-2">
+                      <img
+                        src={slide.image}
+                        alt={slide.alt}
+                        className="mx-auto w-full max-w-md rounded-2xl shadow-xl lg:max-w-lg"
+                      />
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden lg:flex" />
+            <CarouselNext className="hidden lg:flex" />
+          </Carousel>
         </div>
       </section>
 
