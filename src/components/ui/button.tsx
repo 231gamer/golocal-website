@@ -9,15 +9,16 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent/10 hover:text-accent-foreground",
+        default: "bg-primary text-text-inverse hover:bg-primary-hover active:bg-primary-hover disabled:bg-primary/35 disabled:text-text-inverse/70",
+        destructive: "bg-danger text-text-inverse hover:bg-danger/90",
+        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-text-inverse",
+        secondary: "border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-text-inverse",
+        ghost: "text-primary hover:bg-primary/10",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg",
-        heroOutline: "border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-accent-foreground",
-        whatsapp: "bg-[#25D366] text-white hover:bg-[#22c55e] shadow-lg",
+        hero: "bg-accent text-text-inverse hover:bg-accent-hover shadow-lg",
+        heroOutline: "border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-text-inverse",
+        success: "bg-accent text-text-inverse hover:bg-accent-hover",
+        whatsapp: "bg-accent text-text-inverse hover:bg-accent-hover shadow-lg",
       },
       size: {
         default: "h-12 px-6 py-3",

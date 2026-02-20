@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-secondary/50 to-background py-12 md:py-20">
+      <section className="bg-gradient-to-b from-accent/20 to-bg py-12 md:py-20">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-display text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl">
@@ -107,9 +107,9 @@ const Contact = () => {
                   href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 transition-colors hover:border-[#25D366]"
+                  className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 transition-colors hover:border-accent"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#25D366]/10 text-[#25D366]">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
                     <MessageCircle className="h-6 w-6" />
                   </div>
                   <div>

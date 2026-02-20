@@ -43,7 +43,7 @@ const Gallery = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-secondary/50 to-background py-12 md:py-20">
+      <section className="bg-gradient-to-b from-accent/20 to-bg py-12 md:py-20">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-display text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl">

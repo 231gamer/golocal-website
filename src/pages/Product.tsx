@@ -24,7 +24,7 @@ const Product = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-secondary/50 to-background py-12 md:py-20">
+      <section className="bg-gradient-to-b from-accent/20 to-bg py-12 md:py-20">
         <div className="container">
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
@@ -143,7 +143,7 @@ const Product = () => {
       </section>
 
       {/* Storage & Usage */}
-      <section className="bg-secondary/30 py-16 md:py-24">
+      <section className="bg-accent/30 py-16 md:py-24">
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
             <SectionHeading

@@ -21,66 +21,40 @@ export default {
         display: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        // Custom earth tone palette
-        earth: {
-          brown: "hsl(var(--earth-brown))",
-          "brown-light": "hsl(var(--earth-brown-light))",
-        },
-        coconut: {
-          cream: "hsl(var(--coconut-cream))",
-        },
-        natural: {
-          green: "hsl(var(--natural-green))",
-          "green-light": "hsl(var(--natural-green-light))",
-        },
-        peanut: {
-          tan: "hsl(var(--peanut-tan))",
-        },
-        cassava: {
-          gold: "hsl(var(--cassava-gold))",
-        },
+        /* semantic tokens mapped to CSS variables */
+        background: "var(--color-bg)",
+        foreground: "var(--color-text)",
+        border: "var(--color-border)",
+        input: "var(--color-border)",
+        ring: "var(--color-focus-ring)",
+
+        primary: "var(--color-primary)",
+        "primary-hover": "var(--color-primary-hover)",
+        accent: "var(--color-accent)",
+        "accent-hover": "var(--color-accent-hover)",
+        muted: "var(--color-muted)",
+        destructive: "var(--color-danger)",
+        danger: "var(--color-danger)",
+
+        /* convenience aliases so existing utility classes still work */
+        bg: "var(--color-bg)",
+        text: "var(--color-text)",
+        card: "var(--color-surface)",
+        "card-foreground": "var(--color-text)",
+        "muted-foreground": "var(--color-muted)",
+        "primary-foreground": "var(--color-text-inverse)",
+        "accent-foreground": "var(--color-text-inverse)",
+        secondary: "var(--color-accent)",
+        "secondary-foreground": "var(--color-text-inverse)",
         sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+          DEFAULT: "var(--color-bg)",
+          foreground: "var(--color-text)",
+          primary: "var(--color-primary)",
+          "primary-foreground": "var(--color-text-inverse)",
+          accent: "var(--color-accent)",
+          "accent-foreground": "var(--color-text-inverse)",
+          border: "var(--color-border)",
+          ring: "var(--color-focus-ring)",
         },
       },
       borderRadius: {

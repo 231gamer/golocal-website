@@ -10,98 +10,24 @@
 
 @layer base {
   :root {
-    /* Warm cream background */
-    --background: 40 33% 98%;
-    --foreground: 25 30% 15%;
-
-    /* Card surfaces */
-    --card: 40 30% 96%;
-    --card-foreground: 25 30% 15%;
-
-    --popover: 40 30% 96%;
-    --popover-foreground: 25 30% 15%;
-
-    /* Primary: Rich earthy brown (cassava inspired) */
-    --primary: 25 45% 30%;
-    --primary-foreground: 40 33% 98%;
-
-    /* Secondary: Warm beige/tan (coconut inspired) */
-    --secondary: 35 30% 88%;
-    --secondary-foreground: 25 30% 20%;
-
-    /* Muted: Soft cream */
-    --muted: 40 20% 92%;
-    --muted-foreground: 25 15% 45%;
-
-    /* Accent: Natural earthy green */
-    --accent: 95 35% 35%;
-    --accent-foreground: 40 33% 98%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 33% 98%;
-
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 25 45% 30%;
-
-    --radius: 0.75rem;
-
-    /* Custom tokens */
-    --earth-brown: 25 45% 30%;
-    --earth-brown-light: 25 35% 45%;
-    --coconut-cream: 40 40% 94%;
-    --natural-green: 95 35% 35%;
-    --natural-green-light: 95 30% 45%;
-    --peanut-tan: 30 35% 65%;
-    --cassava-gold: 38 60% 55%;
-
-    --sidebar-background: 40 30% 96%;
-    --sidebar-foreground: 25 30% 15%;
-    --sidebar-primary: 25 45% 30%;
-    --sidebar-primary-foreground: 40 33% 98%;
-    --sidebar-accent: 95 35% 35%;
-    --sidebar-accent-foreground: 40 33% 98%;
-    --sidebar-border: 35 20% 85%;
-    --sidebar-ring: 25 45% 30%;
+    --color-primary: #d84016;
+    --color-primary-hover: #ab3311;
+    --color-accent: #083700;
+    --color-accent-hover: #006100;
+    --color-bg: #ffffff;
+    --color-surface: rgba(8, 55, 0, 0.03);
+    --color-border: rgba(8, 55, 0, 0.2);
+    --color-text: #083700;
+    --color-text-inverse: #ffffff;
+    --color-muted: rgba(8, 55, 0, 0.55);
+    --color-danger: var(--color-primary);
+    --color-focus-ring: rgba(216, 64, 22, 0.4);
   }
 
   .dark {
-    --background: 25 20% 10%;
-    --foreground: 40 33% 95%;
-
-    --card: 25 20% 12%;
-    --card-foreground: 40 33% 95%;
-
-    --popover: 25 20% 12%;
-    --popover-foreground: 40 33% 95%;
-
-    --primary: 35 40% 70%;
-    --primary-foreground: 25 20% 10%;
-
-    --secondary: 25 20% 18%;
-    --secondary-foreground: 40 33% 95%;
-
-    --muted: 25 15% 20%;
-    --muted-foreground: 35 15% 60%;
-
-    --accent: 95 30% 50%;
-    --accent-foreground: 25 20% 10%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 33% 95%;
-
-    --border: 25 15% 20%;
-    --input: 25 15% 20%;
-    --ring: 35 40% 70%;
-
-    --sidebar-background: 25 20% 10%;
-    --sidebar-foreground: 40 33% 95%;
-    --sidebar-primary: 35 40% 70%;
-    --sidebar-primary-foreground: 25 20% 10%;
-    --sidebar-accent: 95 30% 50%;
-    --sidebar-accent-foreground: 25 20% 10%;
-    --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 35 40% 70%;
+    /* optional dark mode overrides */
+    --color-bg: #000000;
+    --color-text: #ffffff;
   }
 }
 
@@ -111,12 +37,42 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-bg text-text font-sans antialiased;
     font-family: 'Inter', system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     @apply font-bold tracking-tight;
+  }
+
+  /* global link defaults */
+  a {
+    color: var(--color-primary);
+  }
+  a:hover {
+    color: var(--color-primary-hover);
+  }
+  a:visited {
+    color: var(--color-accent);
+  }
+
+  /* text selection and scrollbar styling */
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+  }
+
+  /* custom scrollbar thumb and hover */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
   }
 }

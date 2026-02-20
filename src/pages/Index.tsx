@@ -57,7 +57,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-secondary/50 to-background py-12 md:py-20 lg:py-24">
+      <section className="bg-gradient-to-b from-accent/20 to-bg py-12 md:py-20 lg:py-24">
         <div className="container">
           <Carousel
             plugins={[

@@ -9,6 +9,10 @@ const alertVariants = cva(
     variants: {
       variant: {
         default: "bg-background text-foreground",
+        info: "border-l-4 border-accent bg-background text-accent [&>svg]:text-accent",
+        warning: "border-l-4 border-primary bg-background text-primary [&>svg]:text-primary",
+        error: "bg-primary/10 border border-primary text-primary [&>svg]:text-primary",
+        success: "bg-accent/10 border border-accent text-accent [&>svg]:text-accent",
         destructive: "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
       },
     },
